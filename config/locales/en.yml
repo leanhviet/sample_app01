@@ -31,9 +31,13 @@
 
 en:
   hello: "Hello world"
-  layouts:
+  helpers:
     application:
       rubyapp: "Ruby on Rails Tutorial Sample App"
+  layouts:
+    application:
+      full_title:
+        rubyapp: "Ruby on Rails Tutorial Sample App"
   static_pages:
     home:
       rubyonrails: "Ruby on Rails Tutorial"
