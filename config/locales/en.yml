@@ -35,6 +35,15 @@ en:
     application:
       rubyapp: "Ruby on Rails Tutorial Sample App"
   layouts:
+    _footer:
+      rubyonrails: "Ruby on Rails Tutorial"
+      author: "Michael Hartl"
+      btnAbout: "About"
+      btnContact: "Contact"
+      news: "News"
+    _header:
+      btnHome: "Home"
+      btnHelp: "Help"
     application:
       full_title:
         rubyapp: "Ruby on Rails Tutorial Sample App"
@@ -51,4 +60,16 @@ en:
       rubyonrails: "Ruby on Rails Tutorial"
       title: "Help"
       topic: "Help"
+      link: "Rails Tutorial help section"
+    contact:
+      rubyonrails: "Ruby on Rails Tutorial"
+      title: "Contact"
+      topic: "Contact"
+      content: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      link: "contact page"
+  users:
+    new:
+      title: "Sign up"
+      topic: "Sign up"
+      content: "This will be a signup page for new users."
 
