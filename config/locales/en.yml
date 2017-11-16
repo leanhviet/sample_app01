@@ -53,7 +53,7 @@ en:
       title: "Home"
       topic: "Home"
       content1: "This is the home page for the"
-      content2: "sample applicat"
+      content2: "sample application"
     about:
       rubyonrails: "Ruby on Rails Tutorial"
       title: "About"
@@ -61,6 +61,10 @@ en:
       series: "screencast series"
       content: "to teach web development with"
       content1: "This is the sample application for the tutorial."
+      isa: "is a"
+      book: "book"
+      and: "and"
+      the: "The"
     help:
       rubyonrails: "Ruby on Rails Tutorial"
       title: "Help"
@@ -81,4 +85,14 @@ en:
       title: "Sign up"
       topic: "Sign up"
       content: "This will be a signup page for new users."
+      submit: "Create my account"
+      confirm: "Confirmation"
+  shared:
+    error_messages:
+      error: "error"
+      content: "The form contains"
+  controllers:
+    users:
+      success: "Welcome to the Sample App!"
+      fail: "Error!!! Don't find your account"
 

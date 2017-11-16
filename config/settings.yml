@@ -3,3 +3,5 @@ maximum:
   length_email: 255
 minimun:
   length_pass: 6
+user:
+  size: 80
