@@ -5,3 +5,12 @@ minimun:
   length_pass: 6
 user:
   size: 80
+links:
+  railstutorial: http://www.railstutorial.org/
+  railsbook: http://www.railstutorial.org/book/
+  railshelp: http://www.railstutorial.org/help/
+  railscontact: http://www.railstutorial.org/contact/
+  railsweb: http://rubyonrails.org/
+  screencasts: http://screencasts.railstutorial.org/
+  michaelhartl: http://www.michaelhartl.com/
+  railsnews: http://news.railstutorial.org/

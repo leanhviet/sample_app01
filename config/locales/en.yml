@@ -35,14 +35,14 @@ en:
     application:
       rubyapp: "Ruby on Rails Tutorial Sample App"
   layouts:
-    _footer:
+    footer:
       rubyonrails: "Ruby on Rails Tutorial"
       author: "Michael Hartl"
       btnAbout: "About"
       btnContact: "Contact"
       news: "News"
-      the: "The"
-      by: "by"
+      strfull: >
+         The <em>%{rubyonrails}</em> By <em>%{author}</em>.
     _header:
       btnHome: "Home"
       btnHelp: "Help"
@@ -65,17 +65,20 @@ en:
       image: "Cat image"
       content1: "This is the home page for the"
       content2: "sample application"
+      strfull: >
+        This is the home page for the %{rubyonrails} sample
+        application %{signupnow}
     about:
       rubyonrails: "Ruby on Rails Tutorial"
       title: "About"
       topic: "About"
+      book: "Book"
       series: "screencast series"
       content: "to teach web development with"
       content1: "This is the sample application for the tutorial."
-      isa: "is a"
-      book: "book"
-      and: "and"
-      the: "The"
+      strfull: >
+       The <em>%{rubyonrails}</em> is a %{book} and %{series}
+       to teach web development with %{rubyonrails}.
     help:
       rubyonrails: "Ruby on Rails Tutorial"
       title: "Help"
@@ -84,7 +87,10 @@ en:
       content1: "Get help on the"
       content2: "at the"
       content3: "To get help on this sample app, see the"
-      content4: "book"
+      book: "Ruby on Rails Tutorial book."
+      strfull: >
+        Get help on the Ruby on Rails Tutorial at the %{link}.
+         To get help on this sample app, see the <em>%{book}<em/>
     contact:
       rubyonrails: "Ruby on Rails Tutorial"
       title: "Contact"
