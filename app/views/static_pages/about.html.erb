@@ -1,8 +1,11 @@
 <% provide(:title, (t ".title")) %>
 <h1><%= t ".topic" %></h1>
 <p>
-      The <a href="http://www.railstutorial.org/"><em><%= t ".rubyonrails" %></em></a> is a
-      <a href="http://www.railstutorial.org/book">book</a> and
+      <%= t ".the" %>
+      <a href="http://www.railstutorial.org/">
+        <em><%= t ".rubyonrails" %></em>
+      </a> <%= t ".isa" %>
+      <a href="http://www.railstutorial.org/book"><%= t ".book" %></a> <%= t ".and" %>
       <a href="http://screencasts.railstutorial.org/"><%= t ".series" %></a>
       <%= t ".content" %>
       <a href="http://rubyonrails.org/"><%= t ".rubyonrails" %></a>.
