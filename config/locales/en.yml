@@ -41,9 +41,17 @@ en:
       btnAbout: "About"
       btnContact: "Contact"
       news: "News"
+      the: "The"
+      by: "by"
     _header:
       btnHome: "Home"
       btnHelp: "Help"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      users: "Users"
+      logout: "Log out"
+      login: "Log in"
     application:
       full_title:
         rubyapp: "Ruby on Rails Tutorial Sample App"
@@ -52,6 +60,9 @@ en:
       rubyonrails: "Ruby on Rails Tutorial"
       title: "Home"
       topic: "Home"
+      signupnow: "Sign up now!"
+      logo: "Rails logo"
+      image: "Cat image"
       content1: "This is the home page for the"
       content2: "sample application"
     about:
@@ -95,4 +106,11 @@ en:
     users:
       success: "Welcome to the Sample App!"
       fail: "Error!!! Don't find your account"
+    sessions:
+      invalid: "Invalid email/password combination"
+  sessions:
+    new:
+      login: "Log in"
+      newuser: "New user?"
+      signupnow: "Sign up now!"
 
