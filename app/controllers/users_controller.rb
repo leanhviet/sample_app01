@@ -1,9 +1,14 @@
 class UsersController < ApplicationController
+  before_action :logged_in_user, only: %i(index edit update destroy)
+  before_action :correct_user,   only: %i(edit update)
+  before_action :admin_user,     only: :destroy
+
+  def index
+    @users = User.paginate page: params[:page]
+  end
+
   def show
     @user = User.find_by id: params[:id]
-    return if @user
-    flash[:danger] = t "controllers.users.fail"
-    redirect_to root_path
   end
 
   def new
@@ -14,16 +19,61 @@ class UsersController < ApplicationController
     @user = User.new user_params
     if @user.save
       log_in @user
+      remember @user
       flash[:success] = t "controllers.users.success"
-
       redirect_to @user
     else
       render :new
     end
   end
 
-  def user_params
-    params.require(:user).permit :name, :email, :password,
-      :password_confirmation
+  def edit
+    @user = User.find_by id: params[:id]
   end
+
+  def update
+    @user = User.find_by id: params[:id]
+    if @user.update_attributes user_params
+      flash[:success] = t "controllers.users.profileupdate"
+      redirect_to @user
+    else
+      flasherror
+    end
+  end
+
+  def flasherror
+    flash[:danger] = t "controllers.users.updatefail"
+    render :edit
+  end
+
+  def user_params
+    params.require(:user).permit(:name, :email, :password,
+      :password_confirmation)
+  end
+
+  def logged_in_user
+      return if logged_in?
+        store_location
+        flash[:danger] = t "controllers.users.loginpls"
+        redirect_to login_url
+      end
+  end
+
+  def correct_user
+      @user = User.find_by id: params[:id]
+      redirect_to(root_url) unless current_user?(@user)
+  end
+
+  def destroy
+    @user = User.find_by id: params[:id]
+    if @user.destroy
+      flash[:success] = t "controllers.users.deleted"
+    end
+    redirect_to users_url
+  end
+
+  private
+    def admin_user
+      redirect_to root_url unless current_user.admin?
+    end
 end

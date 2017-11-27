@@ -91,6 +91,7 @@ en:
       strfull: >
         Get help on the Ruby on Rails Tutorial at the %{link}.
          To get help on this sample app, see the <em>%{book}<em/>
+      content4: "book"
     contact:
       rubyonrails: "Ruby on Rails Tutorial"
       title: "Contact"
@@ -98,12 +99,23 @@ en:
       content: "Contact the Ruby on Rails Tutorial about the sample app at the"
       link: "contact page"
   users:
+    user:
+      delete: "delete"
+      confirm: "You sure?"
+    index:
+      allusers: "All users"
     new:
       title: "Sign up"
       topic: "Sign up"
       content: "This will be a signup page for new users."
       submit: "Create my account"
       confirm: "Confirmation"
+    edit:
+      title: "Edit user"
+      topic: "Update your profile"
+      confirmation: "Confirmation"
+      submit: "Save changes"
+      change: "change"
   shared:
     error_messages:
       error: "error"
@@ -112,6 +124,10 @@ en:
     users:
       success: "Welcome to the Sample App!"
       fail: "Error!!! Don't find your account"
+      profileupdate: "Profile updated"
+      updatefail: "Update fail!"
+      loginpls: "Please log in."
+      deleted: "User deleted"
     sessions:
       invalid: "Invalid email/password combination"
   sessions:
@@ -119,4 +135,5 @@ en:
       login: "Log in"
       newuser: "New user?"
       signupnow: "Sign up now!"
+      contentCheckbox: "Remember me on this computer"
 
