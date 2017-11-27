@@ -1,15 +1,11 @@
 <% provide(:title, t(".title")) %>
 <h1><%= t ".topic" %></h1>
 <p>
-      <%= t ".the" %>
-      <a href="http://www.railstutorial.org/">
-        <em><%= t ".rubyonrails" %></em>
-      </a> <%= t ".isa" %>
-      <a href="http://www.railstutorial.org/book"><%= t ".book" %></a> <%= t ".and" %>
-      <a href="http://screencasts.railstutorial.org/"><%= t ".series" %></a>
-      <%= t ".content" %>
-      <a href="http://rubyonrails.org/"><%= t ".rubyonrails" %></a>.
+      <%= t(".strfull",
+        rubyonrails: link_to(t(".rubyonrails"), Settings.links.railstutorial),
+        book: link_to(t(".book"), Settings.links.railsbook),
+        series: link_to(t(".series"), Settings.links.screencasts),
+        rubyonrails: link_to(t(".rubyonrails"), Settings.links.railstutorial)).html_safe
+      %>
       <%= t ".content1" %>
 </p>
-
-

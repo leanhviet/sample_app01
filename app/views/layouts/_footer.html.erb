@@ -1,13 +1,15 @@
 <footer class="footer">
   <small>
-    <%= t ".the" %> <a href="http://www.railstutorial.org/"><%= t ".rubyonrails" %></a>
-    <%= t ".by" %>  <a href="http://www.michaelhartl.com/"><%= t ".author" %></a>
+    <%= t(".strfull",
+        rubyonrails: link_to(t(".rubyonrails"), Settings.links.railstutorial),
+        author: link_to(t(".author"), Settings.links.michaelhartl)).html_safe
+      %>
   </small>
   <nav>
     <ul>
       <li><%= link_to t("layouts._footer.btnAbout"), about_path %></li>
       <li><%= link_to t("layouts._footer.btnContact"), contact_path %></li>
-      <li><a href="http://news.railstutorial.org/"><%= t ".news" %></a></li>
+      <li><a href="<%= Settings.links.railsnews %>"><%= t ".news" %></a></li>
     </ul>
   </nav>
 </footer>
